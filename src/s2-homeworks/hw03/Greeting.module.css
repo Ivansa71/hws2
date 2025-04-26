@@ -36,12 +36,26 @@
 
 .input:focus {
     outline: none;
-    border-color: #4dabf7;
+    border: 1px solid #4dabf7;
     box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.25);
+
+    padding: 10px 15px;
+
+    border-radius: 4px;
+    font-size: 16px;
+    flex-grow: 1;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    color: #333;
+    background-color: #fff8f8;
 }
 
 .errorInput {
-    border-color: #dc3545;
+    padding: 10px 15px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    font-size: 16px;
+    flex-grow: 1;
+    transition: border-color 0.2s, box-shadow 0.2s;
     color: #333;
     background-color: #fff8f8;
 }

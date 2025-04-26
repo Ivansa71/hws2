@@ -24,7 +24,7 @@ export const pureAddUser = (name: string, setError: React.Dispatch<React.SetStat
 
 export const pureOnBlur = (name: string, setError: React.Dispatch<React.SetStateAction<string>>) => {
     if(!name) {
-        setError('введите корректное имя')
+        setError('Введите корректное имя')
     }
     // если имя пустое - показать ошибку
 }
