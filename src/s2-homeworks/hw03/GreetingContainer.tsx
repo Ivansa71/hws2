@@ -24,7 +24,7 @@ export const pureAddUser = (name: string, setError: React.Dispatch<React.SetStat
 
 export const pureOnBlur = (name: string, setError: React.Dispatch<React.SetStateAction<string>>) => {
     if(!name) {
-        setError('Введите корректное имя')
+        setError('введите корректное имя')
     }
     // если имя пустое - показать ошибку
 }
@@ -51,9 +51,9 @@ const GreetingContainer= ({
 
     const setNameCallback = (e: React.ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix
-
-        error && setError(error)
-        !error && setError('')
+        
+        // Clear error as soon as user starts typing
+        setError('')
     }
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
